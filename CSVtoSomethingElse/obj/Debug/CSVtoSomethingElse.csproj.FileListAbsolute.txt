@@ -1,0 +1,17 @@
+c:\users\sonic\documents\visual studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Debug\CSVtoSomethingElse.exe.config
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Debug\CSVtoSomethingElse.exe
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Debug\CSVtoSomethingElse.pdb
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Debug\Antlr4.Runtime.dll
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Debug\Antlr4.Runtime.xml
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Debug\CSVLexer.cs
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Debug\CSVParser.cs
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Debug\CSVListener.cs
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Debug\CSVBaseListener.cs
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Debug\CSVVisitor.cs
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Debug\CSVBaseVisitor.cs
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Debug\CSVtoSomethingElse.csproj.Antlr4GeneratedCodeFileListAbsolute.txt
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Debug\CSVtoSomethingElse.exe
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Debug\CSVtoSomethingElse.pdb
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Debug\CSVtoSomethingElse.csprojResolveAssemblyReference.cache
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Debug\EPPlus.dll
+c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Debug\EPPlus.xml

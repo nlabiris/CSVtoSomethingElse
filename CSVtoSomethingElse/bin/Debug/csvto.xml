@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<row>
+		<Details>Mid Bonus</Details>
+		<Month>June</Month>
+		<Amount>"$2,000"</Amount>
+	</row>
+	<row>
+		<Details></Details>
+		<Month>January</Month>
+		<Amount>"""zippo"""</Amount>
+	</row>
+	<row>
+		<Details>Total Bonuses</Details>
+		<Month>""</Month>
+		<Amount>"$5,000"</Amount>
+	</row>
+</root>
