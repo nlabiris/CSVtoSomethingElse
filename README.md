@@ -8,7 +8,6 @@ A tool to convert a CSV (`.csv`) file into the following formats:
 
 You can use switches in order to get the right output. I used the [ANTLR4 parser generator](https://github.com/antlr/antlr4) in order to create a CSV parser to recognize the input file.
 
-
 ### Usage
 
 ```
@@ -17,8 +16,8 @@ CSVtoSomethingElse.exe [-json | -xml | -excel] [input.csv] [output.json | output
 
 #### TODO
 
-- [ ] Implement switches
-- [ ] Provided a binary
+- [X] Implement switches
+- [X] Provided a binary
 
 #### Source code
 
@@ -28,6 +27,10 @@ Alternatively, from the command line (if you have `git` installed):
 ```
 git clone https://github.com/nlabiris/ImageEdit_WPF.git
 ```
+
+#### Download binary
+
+[CSVToSomethingElse v0.1 beta](https://github.com/nlabiris/CSVToSomethingElse/blob/master/CSVToSomethingElse/bin/Release/CSVtoSomethingElse_v0.1_beta.rar?raw=true)
 
 #### License
 
