@@ -14,4 +14,3 @@ c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSom
 c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Debug\CSVtoSomethingElse.pdb
 c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Debug\EPPlus.dll
 c:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Debug\EPPlus.xml
-C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Debug\CSVtoSomethingElse.csprojResolveAssemblyReference.cache

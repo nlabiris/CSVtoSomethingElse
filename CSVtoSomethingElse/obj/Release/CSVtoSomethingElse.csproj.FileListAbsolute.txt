@@ -1,0 +1,16 @@
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Release\CSVtoSomethingElse.exe.config
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Release\CSVLexer.cs
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Release\CSVParser.cs
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Release\CSVListener.cs
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Release\CSVBaseListener.cs
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Release\CSVVisitor.cs
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Release\CSVBaseVisitor.cs
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Release\CSVtoSomethingElse.csproj.Antlr4GeneratedCodeFileListAbsolute.txt
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Release\CSVtoSomethingElse.exe
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Release\CSVtoSomethingElse.pdb
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Release\Antlr4.Runtime.dll
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Release\EPPlus.dll
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Release\Antlr4.Runtime.xml
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\bin\Release\EPPlus.xml
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Release\CSVtoSomethingElse.exe
+C:\Users\Sonic\Documents\Visual Studio 2013\Projects\CSVtoSomethingElse\CSVtoSomethingElse\obj\Release\CSVtoSomethingElse.pdb

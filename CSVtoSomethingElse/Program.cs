@@ -1,6 +1,7 @@
 ﻿using Antlr4.Runtime;
 using Antlr4.Runtime.Tree;
 using OfficeOpenXml;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -8,8 +9,18 @@ using System.Xml;
 
 namespace CSVtoSomethingElse {
     public class Program {
+        private static bool jsonSwitch = false;
+        private static bool xmlSwitch = false;
+        private static bool excelSwitch = false;
+        private static string csvFile = string.Empty;
+        private static string jsonFile = string.Empty;
+        private static string xmlFile = string.Empty;
+        private static string excelFile = string.Empty;
+
         public static void Main(string[] args) {
-            StreamReader stream = new StreamReader(args[0]);
+            ParseArgs(args);
+
+            StreamReader stream = new StreamReader(csvFile);
             AntlrInputStream antlrStream = new AntlrInputStream(stream.ReadToEnd());
             CSVLexer lexer = new CSVLexer(antlrStream);
             CommonTokenStream tokens = new CommonTokenStream(lexer);
@@ -21,9 +32,17 @@ namespace CSVtoSomethingElse {
 
             walker.Walk(load, parseTree);
 
-            SaveToXML("csvto.xml", load);
-            SaveToJSON("csvto.json", load);
-            SaveToExcel("csvto.xlsx", load);
+            if (jsonSwitch) {
+                SaveToJSON(jsonFile, load);
+            }
+
+            if (xmlSwitch) {
+                SaveToXML(xmlFile, load);
+            }
+
+            if (excelSwitch) {
+                SaveToExcel(excelFile, load);
+            }
         }
 
         private static void SaveToXML(string outputFilename, LoaderCSV load) {
@@ -103,6 +122,32 @@ namespace CSVtoSomethingElse {
 
                 package.Save();
                 package.Dispose();
+            }
+        }
+
+        public static void ParseArgs(string[] arg) {
+            if (arg.Length == 0) {
+                throw new ArgumentException("No arguments given!");
+            }
+
+            for (int i = 0; i < arg.Length; i++) {
+                if (arg[i].Contains(".csv")) {
+                    csvFile = arg[i];
+                } else if (arg[i].Contains(".json")) {
+                    jsonFile = arg[i];
+                } else if (arg[i].Contains(".xml")) {
+                    xmlFile = arg[i];
+                } else if (arg[i].Contains(".xlsx")) {
+                    excelFile = arg[i];
+                } else if (arg[i].Contains("-json")) {
+                    jsonSwitch = true;
+                } else if (arg[i].Contains("-xml")) {
+                    xmlSwitch = true;
+                } else if (arg[i].Contains("-excel")) {
+                    excelSwitch = true;
+                } else {
+                    Console.WriteLine("Unknown argument: " + arg[i]);
+                }
             }
         }
     }

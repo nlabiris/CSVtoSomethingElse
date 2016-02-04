@@ -59,12 +59,12 @@
       <DependentUpon>CSV.g4</DependentUpon>
     </Compile>
     <Compile Include="LoaderCSV.cs" />
-    <Compile Include="obj\Debug\CSVBaseListener.cs" />
-    <Compile Include="obj\Debug\CSVBaseVisitor.cs" />
-    <Compile Include="obj\Debug\CSVLexer.cs" />
-    <Compile Include="obj\Debug\CSVListener.cs" />
-    <Compile Include="obj\Debug\CSVParser.cs" />
-    <Compile Include="obj\Debug\CSVVisitor.cs" />
+    <Compile Include="obj\Release\CSVBaseListener.cs" />
+    <Compile Include="obj\Release\CSVBaseVisitor.cs" />
+    <Compile Include="obj\Release\CSVLexer.cs" />
+    <Compile Include="obj\Release\CSVListener.cs" />
+    <Compile Include="obj\Release\CSVParser.cs" />
+    <Compile Include="obj\Release\CSVVisitor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -76,6 +76,9 @@
     </Antlr4>
     <None Include="bin\Debug\t.csv" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
