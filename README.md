@@ -30,7 +30,7 @@ git clone https://github.com/nlabiris/ImageEdit_WPF.git
 
 #### Download binary
 
-[CSVToSomethingElse v0.1 beta](https://github.com/nlabiris/CSVToSomethingElse/blob/master/CSVToSomethingElse/bin/Release/CSVtoSomethingElse_v0.1_beta.rar?raw=true)
+[CSVToSomethingElse v0.1 beta](https://github.com/nlabiris/CSVtoSomethingElse/blob/master/CSVtoSomethingElse/bin/Release/CSVtoSomethingElse_v0.1_beta.rar?raw=true)
 
 #### License
 
