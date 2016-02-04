@@ -7,8 +7,8 @@ using System.Text;
 using System.Xml;
 
 namespace CSVtoSomethingElse {
-    internal class Program {
-        internal static void Main(string[] args) {
+    public class Program {
+        public static void Main(string[] args) {
             StreamReader stream = new StreamReader(args[0]);
             AntlrInputStream antlrStream = new AntlrInputStream(stream.ReadToEnd());
             CSVLexer lexer = new CSVLexer(antlrStream);

@@ -1,17 +1,62 @@
 {
 	{
-		"Details"="Mid Bonus",
-		"Month"="June",
-		"Amount"=""$2,000""
+		"REVIEW_DATE"="1985/01/21",
+		"AUTHOR"="Douglas Adams",
+		"ISBN"="0345391802",
+		"DISCOUNTED_PRICE"="5.95"
 	}
 	{
-		"Details"="",
-		"Month"="January",
-		"Amount"=""""zippo""""
+		"REVIEW_DATE"="1990/01/12",
+		"AUTHOR"="Douglas Hofstadter",
+		"ISBN"="0465026567",
+		"DISCOUNTED_PRICE"="9.95"
 	}
 	{
-		"Details"="Total Bonuses",
-		"Month"="""",
-		"Amount"=""$5,000""
+		"REVIEW_DATE"="1998/07/15",
+		"AUTHOR"="Timothy "The Parser" Campbell",
+		"ISBN"="0968411304",
+		"DISCOUNTED_PRICE"="18.99"
+	}
+	{
+		"REVIEW_DATE"="1999/12/03",
+		"AUTHOR"="Richard Friedman",
+		"ISBN"="0060630353",
+		"DISCOUNTED_PRICE"="5.95"
+	}
+	{
+		"REVIEW_DATE"="2001/09/19",
+		"AUTHOR"="Karen Armstrong",
+		"ISBN"="0345384563",
+		"DISCOUNTED_PRICE"="9.95"
+	}
+	{
+		"REVIEW_DATE"="2002/06/23",
+		"AUTHOR"="David Jones",
+		"ISBN"="0198504691",
+		"DISCOUNTED_PRICE"="9.95"
+	}
+	{
+		"REVIEW_DATE"="2002/06/23",
+		"AUTHOR"="Julian Jaynes",
+		"ISBN"="0618057072",
+		"DISCOUNTED_PRICE"="12.50"
+	}
+	{
+		"REVIEW_DATE"="2003/09/30",
+		"AUTHOR"="Scott Adams",
+		"ISBN"="0740721909",
+		"DISCOUNTED_PRICE"="4.95"
+	}
+	{
+		"REVIEW_DATE"="2004/10/04",
+		"AUTHOR"="Benjamin Radcliff",
+		"ISBN"="0804818088",
+		"DISCOUNTED_PRICE"="4.95"
+	}
+	{
+		"REVIEW_DATE"="2004/10/04",
+		"AUTHOR"="Randel Helms",
+		"ISBN"="0879755725",
+		"DISCOUNTED_PRICE"="4.50"
 	}
 }

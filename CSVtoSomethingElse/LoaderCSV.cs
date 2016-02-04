@@ -13,7 +13,17 @@ namespace CSVtoSomethingElse {
         }
 
         public override void ExitString(CSVParser.StringContext context) {
-            currentRowFieldValues.Add(context.STRING().GetText());
+            string trimQuote = context.STRING().GetText().TrimStart('\"');
+            trimQuote = trimQuote.TrimEnd('\"');
+
+            int first = trimQuote.IndexOf('\"');
+            int last = trimQuote.LastIndexOf('\"');
+            if (first != -1 || last != -1) {
+                trimQuote = trimQuote.Remove(first, 1);
+                trimQuote = trimQuote.Remove(last-1, 1);
+            }
+
+            currentRowFieldValues.Add(trimQuote);
         }
 
         public override void ExitText(CSVParser.TextContext context) {
