@@ -11,13 +11,8 @@ You can use switches in order to get the right output. I used the [ANTLR4 parser
 ### Usage
 
 ```
-CSVtoSomethingElse.exe [-json | -xml | -excel] [input.csv] [output.json | output.xml | output.xlsx]
+CSVtoSomethingElse.exe input.csv [-json | -xml | -excel] [output.json | output.xml | output.xlsx]
 ```
-
-#### TODO
-
-- [X] Implement switches
-- [X] Provided a binary
 
 #### Source code
 
@@ -25,12 +20,12 @@ You can download the executable below. For the source code, you can click the *"
 
 Alternatively, from the command line (if you have `git` installed):
 ```
-git clone https://github.com/nlabiris/ImageEdit_WPF.git
+git clone https://github.com/nlabiris/CSVtoSomethingElse.git
 ```
 
 #### Download binary
 
-[CSVToSomethingElse v0.1 beta](https://github.com/nlabiris/CSVtoSomethingElse/blob/master/CSVtoSomethingElse/bin/Release/CSVtoSomethingElse_v0.1_beta.rar?raw=true)
+[CSVToSomethingElse v0.1.1 beta](https://github.com/nlabiris/CSVtoSomethingElse/blob/master/CSVtoSomethingElse/bin/Release/CSVtoSomethingElse_v0.1.1_beta.rar?raw=true)
 
 #### License
 

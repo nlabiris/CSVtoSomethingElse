@@ -12,15 +12,27 @@ namespace CSVtoSomethingElse {
         private static bool jsonSwitch = false;
         private static bool xmlSwitch = false;
         private static bool excelSwitch = false;
-        private static string csvFile = string.Empty;
-        private static string jsonFile = string.Empty;
-        private static string xmlFile = string.Empty;
-        private static string excelFile = string.Empty;
+        private static string csvInputFile = string.Empty;
+        private static string jsonOutputFile = string.Empty;
+        private static string xmlOutputFile = string.Empty;
+        private static string excelOutputFile = string.Empty;
 
         public static void Main(string[] args) {
+            if (args.Length == 0) {
+                Console.WriteLine("No arguments given!");
+                Console.WriteLine("Usage: input.csv [-json | -xml | -excel] [output.json | output.xml | output.xlsx]");
+                return;
+            }
             ParseArgs(args);
 
-            StreamReader stream = new StreamReader(csvFile);
+            StreamReader stream = null;
+            try {
+                stream = new StreamReader(csvInputFile);
+            } catch (ArgumentException) {
+                Console.WriteLine("Input filename not set!");
+                return;
+            }
+
             AntlrInputStream antlrStream = new AntlrInputStream(stream.ReadToEnd());
             CSVLexer lexer = new CSVLexer(antlrStream);
             CommonTokenStream tokens = new CommonTokenStream(lexer);
@@ -33,15 +45,27 @@ namespace CSVtoSomethingElse {
             walker.Walk(load, parseTree);
 
             if (jsonSwitch) {
-                SaveToJSON(jsonFile, load);
+                if (jsonOutputFile == string.Empty) {
+                    Console.WriteLine("[JSON] Output filename not set!");
+                    return;
+                }
+                SaveToJSON(jsonOutputFile, load);
             }
 
             if (xmlSwitch) {
-                SaveToXML(xmlFile, load);
+                if (xmlOutputFile == string.Empty) {
+                    Console.WriteLine("[XML] Output filename not set!");
+                    return;
+                }
+                SaveToXML(xmlOutputFile, load);
             }
 
             if (excelSwitch) {
-                SaveToExcel(excelFile, load);
+                if (excelOutputFile == string.Empty) {
+                    Console.WriteLine("[Excel] Output filename not set!");
+                    return;
+                }
+                SaveToExcel(excelOutputFile, load);
             }
         }
 
@@ -63,7 +87,6 @@ namespace CSVtoSomethingElse {
                 }
                 writer.WriteEndElement();
                 writer.WriteEndDocument();
-                writer.Flush();
                 writer.Close();
             }
         }
@@ -92,9 +115,7 @@ namespace CSVtoSomethingElse {
                 }
                 sb.AppendLine("}");
 
-                stream.NewLine = "\r\n";
                 stream.Write(sb);
-                stream.Flush();
                 stream.Close();
             }
         }
@@ -126,19 +147,15 @@ namespace CSVtoSomethingElse {
         }
 
         public static void ParseArgs(string[] arg) {
-            if (arg.Length == 0) {
-                throw new ArgumentException("No arguments given!");
-            }
-
             for (int i = 0; i < arg.Length; i++) {
                 if (arg[i].Contains(".csv")) {
-                    csvFile = arg[i];
+                    csvInputFile = arg[i];
                 } else if (arg[i].Contains(".json")) {
-                    jsonFile = arg[i];
+                    jsonOutputFile = arg[i];
                 } else if (arg[i].Contains(".xml")) {
-                    xmlFile = arg[i];
+                    xmlOutputFile = arg[i];
                 } else if (arg[i].Contains(".xlsx")) {
-                    excelFile = arg[i];
+                    excelOutputFile = arg[i];
                 } else if (arg[i].Contains("-json")) {
                     jsonSwitch = true;
                 } else if (arg[i].Contains("-xml")) {
